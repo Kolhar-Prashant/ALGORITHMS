@@ -1,9 +1,7 @@
 # Euclid's Algorithm to find GCD.
 def calc_GCD(divisor,dividend):
-    quo = 0
     rem = -1
     while (rem != 0):
-        quo = dividend // divisor
         rem = dividend % divisor
         dividend = divisor
         divisor = rem
