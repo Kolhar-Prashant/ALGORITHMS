@@ -1,4 +1,4 @@
-
+# Euclid's Algorithm to find GCD.
 def calc_GCD(divisor,dividend):
     quo = 0
     rem = -1
