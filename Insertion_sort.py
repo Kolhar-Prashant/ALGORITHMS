@@ -16,21 +16,3 @@ for i in range(len(L)):  # Running a loop on list
                                         #it’s right index
         L[x]=temp
 print(L)
-
-
-
-'''L=[0,6521,3,100000,4,-11,786,-85269,5,6,-1,0,-859]
-
-for i in range(len(L)):
-    if i <= len(L)-2:
-        next=i+1
-    if L[next] < L[i]:
-        temp=L[next]
-
-        while (temp < L[i] and i != -1):
-            piv_indx=i+1
-            L[piv_indx]=L[i]
-            i-=1
-        x=L.index(L[piv_indx-1])
-        L[x]=temp
-print(L)'''
