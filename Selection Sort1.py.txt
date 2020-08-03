@@ -1,0 +1,19 @@
+def Selection_sort(L):
+    indx=0
+    while indx != len(L):
+        min=L[indx]
+        Flag=0
+        for ele in range(indx+1,len(L)):
+            if L[ele] < min:
+                min = L[ele]
+                add = ele
+                Flag=1
+        if Flag == 1:    
+            temp = L[indx]        
+            L[indx] = min
+            L[add] = temp
+        indx+=1
+    return L
+L=[1,-4,5,3,2,-11,66,2,0,6546,-11,4,-23,2,0]  #Provide array here.
+L=Selection_sort(L)
+print(L)
